@@ -1,0 +1,194 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:sn754410
+LIBS:dc_motor
+LIBS:DumbBot-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L SN754410 U?
+U 1 1 5519A992
+P 5400 2400
+F 0 "U?" H 5950 2750 60  0000 C CNN
+F 1 "SN754410" H 5600 3800 60  0000 C CNN
+F 2 "" H 5600 3700 60  0000 C CNN
+F 3 "" H 5600 3700 60  0000 C CNN
+	1    5400 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L 7805 U?
+U 1 1 5519AC16
+P 2250 4350
+F 0 "U?" H 2400 4154 60  0000 C CNN
+F 1 "7805" H 2250 4550 60  0000 C CNN
+F 2 "" H 2250 4350 60  0000 C CNN
+F 3 "" H 2250 4350 60  0000 C CNN
+	1    2250 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Crystal Y?
+U 1 1 5519AD00
+P 2200 2950
+F 0 "Y?" H 2200 3100 50  0000 C CNN
+F 1 "Crystal" H 2200 2800 50  0000 C CNN
+F 2 "" H 2200 2950 60  0000 C CNN
+F 3 "" H 2200 2950 60  0000 C CNN
+	1    2200 2950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CP 10uF
+U 1 1 5519AE26
+P 2000 4950
+F 0 "10uF" H 2025 5050 50  0000 L CNN
+F 1 "CP" H 2025 4850 50  0000 L CNN
+F 2 "" H 2038 4800 30  0000 C CNN
+F 3 "" H 2000 4950 60  0000 C CNN
+	1    2000 4950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CP 1uF
+U 1 1 5519AE90
+P 2500 4950
+F 0 "1uF" H 2525 5050 50  0000 L CNN
+F 1 "CP" H 2525 4850 50  0000 L CNN
+F 2 "" H 2538 4800 30  0000 C CNN
+F 3 "" H 2500 4950 60  0000 C CNN
+	1    2500 4950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2250 4600 2250 5250
+Connection ~ 2250 4950
+Wire Wire Line
+	1850 4950 1850 4300
+Wire Wire Line
+	2650 4300 2650 4950
+Wire Wire Line
+	2350 4950 2150 4950
+$Comp
+L GND #PWR?
+U 1 1 5519B13E
+P 2250 5250
+F 0 "#PWR?" H 2250 5000 50  0001 C CNN
+F 1 "GND" H 2250 5100 50  0000 C CNN
+F 2 "" H 2250 5250 60  0000 C CNN
+F 3 "" H 2250 5250 60  0000 C CNN
+	1    2250 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 4300 2850 4300
+$Comp
+L +5V #PWR?
+U 1 1 5519B18A
+P 2850 4300
+F 0 "#PWR?" H 2850 4150 50  0001 C CNN
+F 1 "+5V" H 2850 4440 50  0000 C CNN
+F 2 "" H 2850 4300 60  0000 C CNN
+F 3 "" H 2850 4300 60  0000 C CNN
+	1    2850 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L +BATT #PWR?
+U 1 1 5519B1A4
+P 1850 4300
+F 0 "#PWR?" H 1850 4150 50  0001 C CNN
+F 1 "+BATT" H 1850 4440 50  0000 C CNN
+F 2 "" H 1850 4300 60  0000 C CNN
+F 3 "" H 1850 4300 60  0000 C CNN
+	1    1850 4300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L +BATT #PWR?
+U 1 1 5519B1FA
+P 4550 1900
+F 0 "#PWR?" H 4550 1750 50  0001 C CNN
+F 1 "+BATT" H 4550 2040 50  0000 C CNN
+F 2 "" H 4550 1900 60  0000 C CNN
+F 3 "" H 4550 1900 60  0000 C CNN
+	1    4550 1900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4650 1900 4550 1900
+$Comp
+L DC_Motor U?
+U 1 1 5519B33D
+P 2500 1450
+F 0 "U?" H 2500 1250 60  0000 C CNN
+F 1 "DC_Motor" H 2500 1750 60  0000 C CNN
+F 2 "" H 2500 1450 60  0000 C CNN
+F 3 "" H 2500 1450 60  0000 C CNN
+	1    2500 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L DC_Motor U?
+U 1 1 5519B393
+P 7650 1500
+F 0 "U?" H 7650 1300 60  0000 C CNN
+F 1 "DC_Motor" H 7650 1800 60  0000 C CNN
+F 2 "" H 7650 1500 60  0000 C CNN
+F 3 "" H 7650 1500 60  0000 C CNN
+	1    7650 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ATTINY87-AS IC?
+U 1 1 5519B55B
+P 5550 3700
+F 0 "IC?" H 4600 4650 40  0000 C CNN
+F 1 "ATTINY87-AS" H 6350 2750 40  0000 C CNN
+F 2 "SO20" H 5550 3700 35  0000 C CIN
+F 3 "" H 5550 3700 60  0000 C CNN
+	1    5550 3700
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
